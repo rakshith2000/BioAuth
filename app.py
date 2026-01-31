@@ -36,8 +36,8 @@ db = SQLAlchemy(app)
 login_manager = LoginManager(app)
 login_manager.login_view = "login_page"
 
-RP_ID = "bioauth.onrender.com"
-ORIGIN = "https://bioauth.onrender.com"
+RP_ID = "bioauth-y45s.onrender.com"
+ORIGIN = "https://bioauth-y45s.onrender.com"
 
 # --------------------------------------------------
 # MODELS
