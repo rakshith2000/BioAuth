@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <p>Welcome, {{ current_user.username }}</p>
+
+    <button onclick="registerBiometric()">Biometrics</button>
+
+    <hr>
+
+    <h3>Create Note</h3>
+    <input id="noteText">
+    <button onclick="createNote()">Save</button>
+
+    <h3>Your Notes</h3>
+    <ul id="notes"></ul>
+
+    <a href="/logout">Logout</a>
+
+    <script src="/static/webauthn.js"></script>
+{% endblock %}
